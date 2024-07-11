@@ -1,0 +1,208 @@
+body {
+    background-color: #0B1D26;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+#account-image {
+    width: 40px;
+}
+
+.eq-ab-bl {
+    display: inline;
+    margin: 10px
+}
+
+#big-image {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+h1 {
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    z-index: 1;
+    text-align: center;
+    font-size: 300%;
+    color: white;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+    "text-one img-one"
+    "img-two text-two"
+    "text-three img-three";
+    justify-content: center;
+    margin-bottom: 100px;
+    gap: 30px;
+    color: white;
+}
+
+.text-in-grid-container {
+    font-size: 20px;
+}
+
+#text-one {
+    grid-area: text-one;
+}
+
+#img-one {
+    grid-area: img-one;
+}
+
+#text-two {
+    grid-area: text-two;
+}
+
+#img-two {
+    grid-area: img-two;
+}
+
+#text-three {
+    grid-area: text-three;
+}
+
+#img-three {
+    grid-area: img-three;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+}
+
+.container-p {
+    font-size: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+#footer-div {
+    /* display: flex;
+    align-items: flex-start; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer p {
+    font-size: 150%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 100%;
+}
+
+.exception {
+    font-size: 150%;
+    color: #9babb4;
+}
+
+.list {
+    display: inline-block;
+}
+
+#photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.photo-in-flex-container {
+    width: 80%;
+}
+
+h2 {
+    text-align: center;
+    color: #9babb4;
+}
+
+#h-two {
+    font-size: 200%;
+}
+
+@media screen and (max-width: 1400px) {
+    h1 {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    h2 {
+        font-size: 100%;
+    }
+
+    #h-two {
+        font-size: 100%;
+    }
+
+    .container-p {
+        font-size: 80%;
+    }
+
+    #grid-container {
+        grid-template-areas: 
+        "text-one"
+        "img-one"
+        "text-two"
+        "img-two"
+        "text-three"
+        "img-three";
+        gap: 0px;
+    }
+
+    .images {
+        width: 80%;
+        height: 80%;
+        justify-self: center;
+    }
+
+    footer p {
+        font-size: 100%;
+    }
+
+
+    li {
+        font-size: 80%;
+    }
+
+    .exception {
+        font-size: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
